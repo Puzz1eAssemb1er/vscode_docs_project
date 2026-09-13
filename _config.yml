@@ -2,7 +2,7 @@ title: Документация Яндекс Диска
 description: Портфолио технического писателя
 remote_theme: just-the-docs/just-the-docs
 search_enabled: true
-color_scheme: light
+color_scheme: custom
 
 aux_links:
   "GitHub репозиторий":
