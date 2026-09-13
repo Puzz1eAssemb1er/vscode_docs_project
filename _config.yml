@@ -1,0 +1,11 @@
+title: Документация Яндекс Диска
+description: Портфолио технического писателя
+remote_theme: just-the-docs/just-the-docs
+search_enabled: true
+color_scheme: light
+
+aux_links:
+  "GitHub репозиторий":
+    - "https://github.com/Puzz1eAssemb1er/vscode_docs_project"
+
+footer_content: "Портфолио технического писателя - Сергей Гречкин"
