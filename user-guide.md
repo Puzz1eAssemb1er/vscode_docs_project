@@ -143,61 +143,15 @@ has_children: false
 
 ### Настройка общего доступа
 
-```mermaid
----
-title: Настройка общего доступа к папке
----
-graph TD
-    A([Начало: открыть Яндекс Диск в браузере]) --> B[Выбрать папку]
-    B --> C[Нажать «Настроить доступ»]
-    C --> D[Ввести email или имя пользователя Яндекса]
-    D --> E{Выбрать уровень прав}
+![Схема процесса настройки общего доступа](images/share-access-flow.png)
 
-    E -- Только просмотр --> F[Участник может просматривать и скачивать файлы]
-    E -- Полный доступ --> G[Участник может загружать, редактировать, переименовывать и удалять файлы]
-
-    F --> H[Нажать «Пригласить»]
-    G --> H
-    H --> I([Готово: участник получил доступ])
-
-    classDef startEnd fill:#f9f,stroke:#333,stroke-width:2px,color:#000;
-    classDef condition fill:#fff2cc,stroke:#d6b656,stroke-width:2px,color:#000;
-    classDef action fill:#dae8fc,stroke:#6c8ebf,stroke-width:1.5px,color:#000;
-
-    class A,I startEnd;
-    class E condition;
-    class B,C,D,F,G,H action;
-```
+*Рис. 2. Схема процесса настройки общего доступа.*
 
 ### Удаление общей папки
 
-```mermaid
----
-title: Удаление общей папки
----
-graph TD
-    A([Участник или владелец удаляет папку]) --> B{Кто удаляет?}
+![Схема процесса удаления общей папки](images/delete-folder-flow.png)
 
-    B -- Участник --> C[Папка исчезает только у него]
-    C --> D[У остальных папка остаётся, доступ работает]
-
-    B -- Владелец --> E[Общий доступ закрывается для всех]
-    E --> F[Папка удаляется у всех участников]
-    F --> G[Восстановить доступ нельзя — нужно создавать новую папку]
-
-    D --> H([Конец])
-    G --> H
-
-    classDef startEnd fill:#f9f,stroke:#333,stroke-width:2px,color:#000;
-    classDef condition fill:#fff2cc,stroke:#d6b656,stroke-width:2px,color:#000;
-    classDef action fill:#dae8fc,stroke:#6c8ebf,stroke-width:1.5px,color:#000;
-    classDef warning fill:#f8cecc,stroke:#b85450,stroke-width:1.5px,color:#000;
-
-    class A,H startEnd;
-    class B condition;
-    class C,D,E,F action;
-    class G warning;
-```
+*Рис. 3. Схема процесса удаления общей папки.*
 
 ## Типовые проблемы и их решения
 
