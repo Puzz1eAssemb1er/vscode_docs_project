@@ -40,6 +40,7 @@
 vscode_docs_project/
 ├── README.md           ← вы здесь: описание проекта
 ├── user-guide.md       ← руководство пользователя
+├── release-notes.md    ← история изменений функциональности
 ├── CONTRIBUTING.md     ← правила поддержки документации
 └── images/             ← иллюстрации к руководству
     └── yandex-disk-share-modal.png
